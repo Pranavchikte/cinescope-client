@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CineScope Client
 
-## Getting Started
+This is the official frontend for the CineScope movie discovery application, built with **Next.js** and **Tailwind CSS**. It provides a fast, responsive, and modern user interface for browsing and searching for movies, powered by the [CineScope API](https://github.com/Pranavchikte/cinescope-api).
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Dynamic Homepage:** Displays curated lists of trending, top-rated, and new movies.
+- **Advanced Search:** Allows users to search for movies with real-time results.
+- **Detailed Movie Pages:** Provides a comprehensive view for each movie, including cast, trailer, and a generated color palette.
+- **Responsive Design:** A fully responsive layout that works seamlessly on desktop, tablet, and mobile devices.
+- **Performance Optimized:** Utilizes Next.js for server-side optimizations, static rendering, and optimized image loading to ensure a fast user experience.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **Language:** TypeScript
+- **UI Components:** Radix UI & Lucide React
+- **Deployment:** Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Setup & Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Follow these steps to run the project locally.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/cinescope-client.git](https://github.com/your-username/cinescope-client.git)
+    cd cinescope-client
+    ```
+
+2.  **Install dependencies:**
+    This project uses `npm` for package management.
+    ```bash
+    npm install
+    ```
+
+3.  **Set up environment variables:**
+    Create a file named `.env.local` in the project root. This file will contain the URL for the backend API.
+    ```env
+    # The local URL for your running Flask backend
+    NEXT_PUBLIC_API_URL=[http://127.0.0.1:5000](http://127.0.0.1:5000)
+    ```
+
+4.  **Run the development server:**
+    Make sure your [CineScope API backend](https://github.com/Pranavchikte/cinescope-api) is running first.
+    ```bash
+    npm run dev
+    ```
+    The application will be available at `http://localhost:3000`.
+
+---
